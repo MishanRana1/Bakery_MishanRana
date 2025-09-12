@@ -98,5 +98,17 @@ public class Bread {
     public void setRecipe(String recipe){
         this.recipe = recipe;
     }
+
+    String getIngredients(){
+        String ingredients = "";
+        ingredients += String.format("%.2f cups of flour\n", flour);
+        ingredients += String.format("%.2f cups of water\n", water);
+        ingredients += String.format("%.2f tsps of salt\n", salt);
+        ingredients += String.format("%.2f tsps of sugar\n", sugar);
+        ingredients += String.format("%.2f tsps of baking powder\n", bakingPowder);
+        ingredients += String.format("%.2f tsps of yeast\n", yeast);
+        return ingredients;
+    }
+
     
 }
