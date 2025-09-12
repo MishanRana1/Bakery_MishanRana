@@ -1,3 +1,5 @@
+import java.security.PublicKey;
+
 public class Bread {
 
     private double flour;
@@ -34,5 +36,67 @@ public class Bread {
         this.recipe = recipe;
     }
 
+    public double getFlour(){
+        return flour;
+    }
+    public void setFlour(double flour){
+        this.flour = flour;
+    }
+
+    public double getWater(){
+        return water;
+    }
+    public void setWater(double water){
+        this.water = water;
+    }
+
+    public double getSalt(){
+        return salt;
+    }
+    public void setSalt(double salt){
+        this.salt = salt;
+    }
+
+    public double getSugar(){
+        return sugar;
+    }
+    public void setSugar(double sugar){
+        this.suagr = sugar;
+    }
+
+    public double getBakingPowder(){
+        return bakingPowder;
+    }
+    public void setBakingPowder(double bakingPowder){
+        this.bakingPowder = bakingPowder;
+    }
+
+    public double getYeast(){
+        return yeast;
+    }
+    public void setYeast(double yeast){
+        this.yeast = yeast;
+    }
+
+    public String getBreadName(){
+        return breadName;
+    }
+    public void setBreadName(String breadName){
+        this.breadName = breadName;
+    }
+
+    public String getState(){
+        return state;
+    }
+    public void setState(String state){
+        this.state = state;
+    }
+
+    public String getRecipe(){
+        return recipe;
+    }
+    public void setRecipe(String recipe){
+        this.recipe = recipe;
+    }
     
 }
