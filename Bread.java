@@ -110,5 +110,17 @@ public class Bread {
         return ingredients;
     }
 
-    
+    public void bake() {
+        if ("baked".equals(state)) {
+            System.out.println("Can't bake, " + breadName + " is already baked.");
+        } else {
+            state = "baked";
+            System.out.println("The " + breadName + " is baked now.");
+        }
+    }
+
+    @Override
+    public String toString() {
+        return breadName + " [" + state + "]";
+    }
 }
