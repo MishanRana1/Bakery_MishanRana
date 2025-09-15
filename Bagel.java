@@ -1,19 +1,17 @@
-public class Muffin extends Bread {
-    private boolean hasBlueberries;
-    private double milk; // cups
+public class Bagel extends Bread {
+    private boolean boiledBeforeBaking;
 
-    public Muffin() {
-        super(2.50, 0.75, 0.50, 2.50, 1.00, 0.0, "Muffin", "not baked",
-              "1. Mix dry and wet ingredients separately.\n2. Fold together.\n3. Scoop into tins and bake.");
-        this.hasBlueberries = true;
-        this.milk = 1.00;
+    public Bagel() {
+        super(4.00, 1.50, 1.50, 0.50, 0.0, 1.25, "Bagel", "not baked",
+              "1. Mix and knead dough.\n2. Rise.\n3. Shape into rings.\n4. Boil briefly, then bake.");
+        this.boiledBeforeBaking = true;
     }
 
-    public boolean isHasBlueberries() { return hasBlueberries; }
-    public void setHasBlueberries(boolean hasBlueberries) { this.hasBlueberries = hasBlueberries; }
+    public boolean isBoiledBeforeBaking() { return boiledBeforeBaking; }
+    public void setBoiledBeforeBaking(boolean boiledBeforeBaking) { this.boiledBeforeBaking = boiledBeforeBaking; }
 
     @Override
     public String getIngredients() {
-        return super.getIngredients() + String.format("%.2f cups of milk%nBlueberries: %b%n", milk, hasBlueberries);
+        return super.getIngredients() + "Boiled before baking: " + boiledBeforeBaking + "\n";
     }
 }

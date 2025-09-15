@@ -1,5 +1,3 @@
-import java.security.PublicKey;
-
 public class Bread {
 
     private double flour;
@@ -61,7 +59,7 @@ public class Bread {
         return sugar;
     }
     public void setSugar(double sugar){
-        this.suagr = sugar;
+        this.sugar = sugar;
     }
 
     public double getBakingPowder(){

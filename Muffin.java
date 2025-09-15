@@ -17,3 +17,4 @@ public class Muffin extends Bread {
         return super.getIngredients() + String.format("%.2f cups of milk%nBlueberries: %b%n", milk, hasBlueberries);
     }
 }
+
